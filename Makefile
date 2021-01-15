@@ -1,8 +1,7 @@
 install:
-	cp setup.bash /etc/init.d/raspimouse
-	chmod +x /etc/init.d/raspimouse
-	update-rc.d raspimouse defaults
-
+	cd /home/ubuntu/pimouse_setup
+	cp pimouse.service /lib/systemd/system/pimouse.service
+	systemctl enable pimouse
 uninstall:
-	update-rc.d raspimouse remove
-	rm /etc/init.d/raspimouse
+	systemctl disable pimouse
+	rm /lib/systemd/system/pimouse.service

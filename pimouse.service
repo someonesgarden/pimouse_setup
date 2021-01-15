@@ -1,0 +1,10 @@
+[Unit]
+Description=pimouse setup
+
+[Service]
+Type=simple
+ExecStart=/home/ubuntu/pimouse_setup/setup.bash
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
