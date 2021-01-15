@@ -7,12 +7,5 @@ cd /home/ubuntu/RaspberryPiMouse/src/drivers/
 
 sleep 1
 chmod 666 /dev/rt*
-<<<<<<< HEAD
 echo 0 > /dev/rtmotoren0
 
-
-=======
-
-
-echo 0 > /dev/rtmotoren0
->>>>>>> origin/master
